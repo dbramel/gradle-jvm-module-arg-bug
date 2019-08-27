@@ -10,7 +10,7 @@ Task :run
 Arguments to main():0
 ```
 
-The second gradle build file (build_module.gradle) uses a Java9 module to house the main class, and injects the appropriate `--module` argument using Gradle's jvmArgs array. When calling 'run' we see arguments intended for the JVM passed into `main()`
+The second gradle build file (build_module.gradle) uses a Java9 module to house the main class, and injects the appropriate `--module` argument using Gradle's jvmArgs array. When calling 'run' with this second file (i.e. `gradle -b build_module.gradle run`) we see arguments intended for the JVM passed into `main()`
 
 ```
 > Task :run
